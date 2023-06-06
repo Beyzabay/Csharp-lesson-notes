@@ -1,0 +1,20 @@
+// Güncel tarihi göstermek
+DateTime dt = DateTime.Now;
+
+// integer stringe cevirmek
+string str20 = "20";
+int int20 = 20;
+
+string yeniDeger = str20 + int20.ToString();
+
+//Stringi integer cevirmek
+int int21 = int20 + Convert.ToInt32(str20);
+
+//Parse
+int int22 = int20 + int.Parse(str20);
+
+//Tarihi format haline getirmek
+string datetime = DateTime.Now.ToString("dd.MM.yyyy");
+
+//Saati göstermek 
+String hour =  DateTime.Now.ToString("HH:mm");
