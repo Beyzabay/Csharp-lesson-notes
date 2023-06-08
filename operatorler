@@ -1,0 +1,56 @@
+using System;
+
+namespace operatorler;
+ 
+ class program{
+
+    static void Main (string[] args){
+    // atama ve islemli atama
+    int x = 3;
+    int y = 3;
+
+    y= y+2;
+    Console.WriteLine(y);
+    y += 2;
+    Console.WriteLine(y);
+    x /= 1; 
+    Console.WriteLine(y);
+
+    // &&(ve), || (veya), ! (değil) operatörleri
+    bool isSucces = true;
+    bool isCompleted = false;
+
+    if (isSucces && isCompleted)
+    Console.WriteLine("Succesfuly");
+    
+    if (isSucces || isCompleted)
+    Console.WriteLine("Great");
+
+    if (isSucces && !isCompleted)
+    Console.WriteLine("Fine");
+
+    // iliskisel operatörler
+    int a = 3;
+    int b = 4;
+    bool sonuc = a<b;
+    Console.WriteLine(sonuc);
+    sonuc = a>b;
+    Console.WriteLine(sonuc);
+
+    // Aritmetik operatörler
+    int sayi1 = 10;
+    int sayi2 = 20;
+    int sonuc1 = sayi1 * sayi2;
+    Console.WriteLine(sonuc1);
+    int sonuc2 = 3;
+    sonuc2 += sayi2;
+    Console.WriteLine(sonuc2);
+
+    // mod (kalan) almak %
+    int sonuc3 = 20;
+    int sonuc4 = 3;
+    int mod = sonuc3 % sonuc4;
+    Console.WriteLine(mod);
+
+    }
+ }
